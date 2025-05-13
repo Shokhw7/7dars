@@ -1,0 +1,80 @@
+.hero {
+  padding: 15.8rem 14.8rem 7.1rem;
+  display: flex;
+  gap: 10.6rem;
+
+  &__container {
+    @extend .container;
+    display: flex;
+    gap: 11.5rem;
+    padding-left: 14.8rem;
+    padding-right: 14.8rem;
+  }
+ 
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  &__title {
+    width: 506px;
+    font-weight: 700;
+    font-size: $john-font-size;
+    line-height: 60px;
+  }
+
+  &__description {
+    width: 497px;
+  }
+
+  &__btn {
+    @extend .download;
+  }
+
+  &__image {
+    width: 243px;
+    height: 243px;
+  }
+
+  @include respond-to(768px) {
+    padding: 8rem 2rem;
+    flex-direction: column;
+    gap: 20px;
+    
+    &__title {
+      width: 100%;
+      font-size: 32px;
+      line-height: 44px;
+    }
+
+    &__description {
+      width: 100%;
+    }
+
+    &__image {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+@include respond-to (700px){
+  .hero__container{
+    padding: 0;
+    gap: 3rem;
+  }
+}
+@include respond-to (460px){
+  .hero__container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    .btn{
+      margin: auto;
+    }
+    img{
+      margin: auto;
+    }
+  }
+}

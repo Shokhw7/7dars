@@ -1,0 +1,28 @@
+.footer {
+  text-align: center;
+  padding: 20px 0;
+
+  .social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .social-s {
+    width: 30px;
+    height: 30px;
+  }
+
+  .copy {
+    font-size: 14px;
+  }
+
+  @include respond-to(768px) {
+    padding: 10px 0;
+
+    .social {
+      gap: 15px;
+    }
+  }
+}

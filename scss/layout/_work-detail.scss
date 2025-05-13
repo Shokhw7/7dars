@@ -1,0 +1,30 @@
+.work-detail {
+  padding: 20px 148px;
+
+  &__container {
+    @extend .container;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  &__info {
+    font-size: $sana-font-size;
+  }
+
+  &__desc {
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  @include respond-to(768px) {
+    padding: 20px;
+  }
+}

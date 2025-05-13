@@ -1,0 +1,85 @@
+.posts {
+  background-color: $bg-posts;
+  justify-items: center;
+  padding-top: 7px;
+  padding-bottom: 3.2rem;
+  .head-post {
+    display: flex;
+    padding-bottom: 20px;
+    gap: 669px;
+  }
+
+  .recent {
+    font-size: $recent-font-size;
+  }
+
+  .view {
+    color: $secondary-color;
+  }
+
+  .post-two {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .left-post,
+  .right-post {
+    padding: 24px 21px 7px 23px;
+    border-radius: 7px;
+    width: 418px;
+    height: 295px;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .p-head {
+    width: 374px;
+    font-weight: 700;
+    font-size: $p-head-font-size;
+  }
+
+  .sana {
+    width: 374px;
+    height: 34px;
+    font-size: $sana-font-size;
+  }
+
+  .amet-post {
+    width: 368px;
+  }
+
+  @include respond-to(768px) {
+    .hero__container{
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .view{
+      display: none;
+    }
+    padding: 2rem;
+
+    .head-post {
+      justify-content: center;
+      gap: 2rem;
+    }
+    .post-two {
+      flex-direction: column;
+      
+    }
+
+    .left-post,
+    .right-post {
+      width: 100%;
+      height: auto;
+    }
+
+    .p-head,
+    .sana,
+    .amet-post {
+      width: 100%;
+    }
+  }
+}

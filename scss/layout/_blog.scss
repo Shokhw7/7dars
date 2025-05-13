@@ -1,0 +1,43 @@
+.blog {
+  padding: 2rem 14.8rem;
+
+  &__container {
+    @extend .container;
+    
+  }
+  
+  &__item {
+    background-color: $white;
+    padding: 24px 21px 7px 23px;
+    border-radius: 7px;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__item-title {
+    font-weight: 700;
+    font-size: $p-head-font-size;
+  }
+
+  &__item-info {
+    font-size: $sana-font-size;
+  }
+
+  &__item-desc {
+    width: 368px;
+  }
+
+  @include respond-to(768px) {
+    padding: 2rem;
+
+    &__item {
+      padding: 2rem;
+    }
+
+    &__item-desc {
+      width: 100%;
+    }
+  }
+}

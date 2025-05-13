@@ -349,3 +349,23 @@ template {
 [hidden] {
   display: none;
 }
+// Нормализация из normalize.css
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+// ... (остальные стили normalize.css, сокращены для примера)

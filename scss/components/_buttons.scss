@@ -1,0 +1,15 @@
+.btn {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.download {
+  width: 208px;
+  height: 47px;
+  color: $white;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: $primary-color;
+  line-height: 47px;
+}
